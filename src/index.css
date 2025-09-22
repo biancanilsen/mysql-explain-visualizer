@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light dark;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+.mermaid-container svg {
+  width: 100%;
+  height: auto;
+}
