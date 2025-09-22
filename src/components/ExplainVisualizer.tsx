@@ -195,13 +195,6 @@ export default function ExplainVisualizer() {
               </div>
             </CardHeader>
             <CardBody className="space-y-3">
-              {/* <Textarea
-                aria-label="JSON do EXPLAIN"
-                minRows={10}
-                className="font-mono text-xs"
-                value={input}
-                onChange={(e) => setInput(e.target.value)}
-              /> */}
               <Textarea
                 disableAnimation
                 disableAutosize

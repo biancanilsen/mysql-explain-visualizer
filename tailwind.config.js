@@ -1,15 +1,20 @@
-const { heroui } = require("@heroui/theme");
-const { colors } = require("./../solicitacao-travel-frontend/src/shared/styles/theme");
+import { heroui } from "@heroui/theme";
 
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./src/**/*.{html,js,jsx,ts,tsx}", "./node_modules/@heroui/react/**/*.{js,jsx,ts,tsx}", "./node_modules/@heroui/theme/**/*.{js,jsx,ts,tsx}"],
+export default {
+  content: [
+    // Caminhos para os arquivos do seu projeto
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+
+    // Caminho para os componentes da HeroUI (único caminho necessário)
+    "./node_modules/@heroui/react/dist/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
-      colors: colors,
     },
   },
   darkMode: "class",
